@@ -26,8 +26,8 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/oneplus/oneplus6t/prebuilt/system,system)
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    omni.biometrics.fingerprint.inscreen@1.0-service.oneplus6t
+#PRODUCT_PACKAGES += \
+#    omni.biometrics.fingerprint.inscreen@1.0-service.oneplus6t
 
 # common oneplus6
 $(call inherit-product, device/oneplus/oneplus6/device.mk)

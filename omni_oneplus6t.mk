@@ -32,6 +32,7 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
+DISABLE_ARTIFACT_PATH_REQUIREMENTS :=true
 # must be before including omni part
 TARGET_BOOTANIMATION_SIZE := 1080p
 AB_OTA_UPDATER := true
