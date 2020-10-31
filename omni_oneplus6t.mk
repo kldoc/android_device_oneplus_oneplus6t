@@ -51,6 +51,8 @@ $(call inherit-product, device/oneplus/oneplus6t/device.mk)
 
 ALLOW_MISSING_DEPENDENCIES := true
 PRODUCT_SHIPPING_API_LEVEL := 28
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
+DISABLE_ARTIFACT_PATH_REQUIREMENTS :=true
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := omni_oneplus6t
