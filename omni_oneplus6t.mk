@@ -49,6 +49,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system_arm64.mk)
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/oneplus/oneplus6t/device.mk)
 
+PRODUCT_ADB_KEYS := device/oneplus/oneplus6t/adbkey.pub
+
 ALLOW_MISSING_DEPENDENCIES := true
 PRODUCT_SHIPPING_API_LEVEL := 28
 PRODUCT_EXTRA_VNDK_VERSIONS := 29

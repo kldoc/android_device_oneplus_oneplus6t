@@ -25,6 +25,14 @@ $(call inherit-product, vendor/oneplus/oneplus6/oneplus6-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/oneplus/oneplus6t/prebuilt/system,system)
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vintf/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/vintf/manifest.xml
+ 
+ # HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder \
+ 
 # Fingerprint
 PRODUCT_PACKAGES += \
     omni.biometrics.fingerprint.inscreen@1.0-service.oneplus6t
